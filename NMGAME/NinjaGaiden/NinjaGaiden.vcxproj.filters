@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Frameworks">
+      <UniqueIdentifier>{1d9918db-67d9-46d2-a963-c30428d0b797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{5dcbbe46-8f08-4dbf-895f-df47d828ed09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Enemy">
+      <UniqueIdentifier>{c9094ab1-ee0b-4271-a398-2e5b64507548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects">
+      <UniqueIdentifier>{49b7036c-19fa-44a5-b355-d842cd078022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{a1eb7eb6-7d6c-4453-b1da-5678a81583ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{f88baf5f-7b5a-4ce9-ac95-1faf1c1710e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Frameworks</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Frameworks</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Frameworks</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGame.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Ryu.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="SwordMan.cpp">
+      <Filter>GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>GameObject\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="QGameObject.cpp">
+      <Filter>GameObject\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Frameworks</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Frameworks</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Frameworks</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingObject.cpp">
+      <Filter>GameObject\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sprite.h">
+      <Filter>Frameworks</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Frameworks</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Frameworks</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGame.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="SweptAABB.h">
+      <Filter>Frameworks</Filter>
+    </ClInclude>
+    <ClInclude Include="Ryu.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="SwordMan.h">
+      <Filter>GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>GameObject\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="QGameObject.h">
+      <Filter>GameObject\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="CEnum.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Frameworks</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Frameworks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Frameworks</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingObject.h">
+      <Filter>GameObject\Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Maps\Stage3.1-GameObj.txt">
+      <Filter>GameObject</Filter>
+    </Text>
+    <Text Include="Resources\Maps\Stage3.1-Grid.txt">
+      <Filter>GameObject</Filter>
+    </Text>
+    <Text Include="Resources\Maps\Stage3.1-Map.txt">
+      <Filter>GameObject</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
