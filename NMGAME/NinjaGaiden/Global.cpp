@@ -3,13 +3,8 @@
 #include <d3dx9.h>
 #include <dinput.h>
 
-//
-//GLOBAL CONSTANT
-//
 
-// tieu nun
 int G_CurForm;
-// tieu nun
 int G_NextForm;
 
 bool		G_IsInitedDX = false;

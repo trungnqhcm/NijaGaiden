@@ -1,13 +1,12 @@
-#include "QGameObject.h"
+#include "ListGameObject.h"
 
-
-QGameObject::QGameObject(void)
+ListGameObject::ListGameObject(void)
 {
 }
 
 
 
-QGameObject::QGameObject(string fileName)
+ListGameObject::ListGameObject(string fileName)
 {
 	ifstream map(fileName);
 
@@ -39,6 +38,15 @@ QGameObject::QGameObject(string fileName)
 			case 211:
 				_MovingObject->push_back(new SwordMan(posX, posY));
 				break;
+			case 212:
+				_MovingObject->push_back(new Leopard(posX, posY));
+				break;
+			case 213:
+				_MovingObject->push_back(new MaceMan(posX, posY));
+				break;
+			case 214:
+				_MovingObject->push_back(new GunMan(posX, posY));
+				break;
 			case 26:
 				G_MinSize = posX;
 				break;
@@ -54,7 +62,7 @@ QGameObject::QGameObject(string fileName)
 }
 
 
-void QGameObject::Draw(CCamera *camera)
+void ListGameObject::Draw(CCamera *camera)
 {
 	for (list<GameObject*>::iterator i = _staticObject->begin(); i != _staticObject->end(); i++)
 	{
@@ -74,7 +82,7 @@ void QGameObject::Draw(CCamera *camera)
 	}
 }
 
-void QGameObject::Update(int deltaTime)
+void ListGameObject::Update(int deltaTime)
 {
 	list<GameObject*>::iterator it = _staticObject->begin();
 	while (it != _staticObject->end())
@@ -83,31 +91,16 @@ void QGameObject::Update(int deltaTime)
 		++it;
 	}
 	it = _MovingObject->begin();
-	while (it != _MovingObject->end())
-	{
 
-		if ((*it)->active && (*it)->id != EnumID::RocketMan_ID)
-		{
-			(*it)->Update(deltaTime);
-		}
-		++it;
-	}
 }
 
-void QGameObject::Update(int deltaTime, D3DXVECTOR2* ryuPos)
+void ListGameObject::Update(int deltaTime, D3DXVECTOR2* ryuPos)
 {
 	list<GameObject*>::iterator it = _MovingObject->begin();
-	while (it != _MovingObject->end())
-	{
-		if ((*it)->active && (*it)->id == EnumID::RocketMan_ID)
-		{
-			(*it)->Update(deltaTime, ryuPos);
-		}
-		++it;
-	}
+
 }
 
-void QGameObject::Collision(int dt)
+void ListGameObject::Collision(int dt)
 {
 	for (list<GameObject*>::reverse_iterator i = _staticObject->rbegin(); i != _staticObject->rend(); i++)
 	{
@@ -125,15 +118,15 @@ void QGameObject::Collision(int dt)
 	}
 }
 
-void QGameObject::Initialize()
+void ListGameObject::Initialize()
 {
 }
 
-void QGameObject::RemoveAllObject()
+void ListGameObject::RemoveAllObject()
 {
 	_MovingObject->clear();
 }
 
-QGameObject::~QGameObject(void)
+ListGameObject::~ListGameObject(void)
 {
 }

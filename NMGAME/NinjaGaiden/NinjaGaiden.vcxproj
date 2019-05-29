@@ -131,6 +131,9 @@
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="GunMan.cpp" />
+    <ClCompile Include="Leopard.cpp" />
+    <ClCompile Include="MaceMan.cpp" />
     <ClCompile Include="MovingObject.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -138,7 +141,7 @@
     <ClCompile Include="Grid.cpp" />
     <ClCompile Include="Ground.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="QGameObject.cpp" />
+    <ClCompile Include="ListGameObject.cpp" />
     <ClCompile Include="Ryu.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneGame.cpp" />
@@ -154,13 +157,16 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="CEnum.h" />
+    <ClInclude Include="GunMan.h" />
+    <ClInclude Include="Leopard.h" />
+    <ClInclude Include="MaceMan.h" />
     <ClInclude Include="MovingObject.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="Ground.h" />
-    <ClInclude Include="QGameObject.h" />
+    <ClInclude Include="ListGameObject.h" />
     <ClInclude Include="Ryu.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneGame.h" />

@@ -6,7 +6,7 @@
 #include "Scene.h"
 #include "Ryu.h"
 #include "CText.h"
-#include "QGameObject.h"
+#include "ListGameObject.h"
 #include "Grid.h"
 using namespace std;
 
@@ -26,7 +26,7 @@ protected:
 
 	Background *bg;
 	Ryu* ryu;
-	QGameObject* qGameObject;
+	ListGameObject* listGameObject;
 	Grid* grid;
 
 	CCamera *camera;

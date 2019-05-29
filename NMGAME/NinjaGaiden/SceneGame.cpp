@@ -47,24 +47,24 @@ void SceneGame::LoadStage(int level)
 	case 1:
 	{
 		//ResetLevel();
-		//delete qGameObject;
-		qGameObject = new QGameObject("Resources\\Maps\\Stage3.1-GameObj.txt");
+		//delete ListGameObject;
+		listGameObject = new ListGameObject("Resources\\Maps\\Stage3.1-GameObj.txt");
 		if (!isLoadStage)
 		{
-			grid->addObject(qGameObject->_staticObject);
-			grid->addObject(qGameObject->_MovingObject);
+			grid->addObject(listGameObject->_staticObject);
+			grid->addObject(listGameObject->_MovingObject);
 		}
 	}
 	break;
 	case 2:
 	{
 		//ResetLevel();
-		//delete qGameObject;
-		qGameObject = new QGameObject("Resources\\Maps\\Stage3.3-GameObj.txt");
+		//delete ListGameObject;
+		listGameObject = new ListGameObject("Resources\\Maps\\Stage3.3-GameObj.txt");
 		if (!isLoadStage)
 		{
-			grid->addObject(qGameObject->_staticObject);
-			grid->addObject(qGameObject->_MovingObject);
+			grid->addObject(listGameObject->_staticObject);
+			grid->addObject(listGameObject->_MovingObject);
 		}
 	}
 	break;
@@ -174,6 +174,6 @@ void SceneGame::ResetLevel()
 {
 	if (bg != NULL)
 		delete bg;
-	if (qGameObject != NULL)
-		delete qGameObject;
+	if (listGameObject != NULL)
+		delete listGameObject;
 }

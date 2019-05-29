@@ -113,7 +113,7 @@ void Ryu::Update(int dt) {
 		vX = 0;
 		vY = -SPEED_Y;
 	}
-	//nhay len sau khi rot ho
+
 	if (posY < -80)
 	{
 		if (ryuLife > 0)
@@ -121,17 +121,11 @@ void Ryu::Update(int dt) {
 			ryuLife--;
 			posY = 300;
 			_isFall = true;
-			_hasJump = false;
-			//Jump();
 			onLand = false;
-			//vY = SPEED_Y;
 			posX = posX - 100;
-			
 			vX = _vLast;
 		}
 	}
-	//if (explosion->active)
-	//	explosion->Update(dt);
 }
 
 Box Ryu::GetBox()
@@ -156,7 +150,7 @@ void Ryu::Collision(list<GameObject*> &obj, float dt, bool isDynamic)
 	{
 		GameObject* other = (*_itBegin);
 		
-		if (other->id == EnumID::SwordMan_ID || other->id == EnumID::RocketMan_ID)
+		if (other->id == EnumID::swordMan_ID || other->id == EnumID::leopard_ID || other->id == EnumID::maceMan_ID || other->id == EnumID::gunMan_ID)
 		{
 			other->SetActive(this->posX, this->posY);
 		}

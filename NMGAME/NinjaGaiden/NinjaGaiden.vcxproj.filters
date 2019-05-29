@@ -58,13 +58,7 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>GameObject\Objects</Filter>
     </ClCompile>
-    <ClCompile Include="QGameObject.cpp">
-      <Filter>GameObject\Objects</Filter>
-    </ClCompile>
     <ClCompile Include="Background.cpp">
-      <Filter>Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="Tile.cpp">
       <Filter>Controller</Filter>
     </ClCompile>
     <ClCompile Include="Global.cpp">
@@ -72,9 +66,6 @@
     </ClCompile>
     <ClCompile Include="Singleton.cpp">
       <Filter>Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="Grid.cpp">
-      <Filter>Frameworks</Filter>
     </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>Frameworks</Filter>
@@ -84,6 +75,24 @@
     </ClCompile>
     <ClCompile Include="MovingObject.cpp">
       <Filter>GameObject\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Leopard.cpp">
+      <Filter>GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Frameworks</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="ListGameObject.cpp">
+      <Filter>GameObject\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="MaceMan.cpp">
+      <Filter>GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="GunMan.cpp">
+      <Filter>GameObject\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -120,13 +129,7 @@
     <ClInclude Include="GameObject.h">
       <Filter>GameObject\Objects</Filter>
     </ClInclude>
-    <ClInclude Include="QGameObject.h">
-      <Filter>GameObject\Objects</Filter>
-    </ClInclude>
     <ClInclude Include="Background.h">
-      <Filter>Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="Tile.h">
       <Filter>Controller</Filter>
     </ClInclude>
     <ClInclude Include="Singleton.h">
@@ -138,9 +141,6 @@
     <ClInclude Include="Global.h">
       <Filter>Controller</Filter>
     </ClInclude>
-    <ClInclude Include="Grid.h">
-      <Filter>Frameworks</Filter>
-    </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Frameworks</Filter>
     </ClInclude>
@@ -149,6 +149,24 @@
     </ClInclude>
     <ClInclude Include="MovingObject.h">
       <Filter>GameObject\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Leopard.h">
+      <Filter>GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Frameworks</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="ListGameObject.h">
+      <Filter>GameObject\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="MaceMan.h">
+      <Filter>GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="GunMan.h">
+      <Filter>GameObject\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

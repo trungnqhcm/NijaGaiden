@@ -60,9 +60,12 @@ enum EnumID
 	Stair_ID,
 	Ground2_ID,
 	//Enemy
-	SwordMan_ID,
-	RocketMan_ID,
-	Banshee_ID,
+	swordMan_ID,
+	gunMan_ID,
+	maceMan_ID,
+	leopard_ID,
+	eagle_ID,
+	butterfly_ID,
 	Boss_ID,
 	//Items
 	Hp_ID,

@@ -26,10 +26,14 @@ Singleton::Singleton()
 	ryuSit = new CTexture("Resources/ryuSit.png", 1, 1, 1);
 	ryuSitAttack = new CTexture("Resources/ryuSitAttack.png", 3, 1, 3);
 
-	swordMan = new CTexture("Resources/Enemy/Sword_Man_x2.png", 3, 1, 3);
-	rocketMan = new CTexture("Resources/Enemy/Bazoka_Man_x2.png", 1, 1, 1);
-	banshee = new CTexture("Resources/Enemy/Banshee_x2.png", 3, 1, 3);
-	boss = new CTexture("Resources/Enemy/Final_Boss_x2.png", 2, 1, 2);
+	swordMan = new CTexture("Resources/Enemy/Sword_Man.png", 3, 1, 3);
+	gunMan = new CTexture("Resources/Enemy/Gun_Man.png", 2, 1, 2);
+	maceMan = new CTexture("Resources/Enemy/Mace_Man.png", 3, 1, 3);
+	leopard = new CTexture("Resources/Enemy/Leopard.png", 2, 1, 2);
+	eagle = new CTexture("Resources/Enemy/Eagle.png", 2, 1, 2);
+	butterfly = new CTexture("Resources/Enemy/Butterfly.png", 2, 1, 2);
+
+	boss = new CTexture("Resources/Enemy/Final_Boss.png", 2, 1, 2);
 }
 
 CTexture* Singleton::getTexture(EnumID id)
@@ -53,12 +57,18 @@ CTexture* Singleton::getTexture(EnumID id)
 
 		case EnumID::GameScore_ID:
 			return gameScore;
-		case EnumID::SwordMan_ID:
+		case EnumID::swordMan_ID:
 			return swordMan;
-		case EnumID::RocketMan_ID:
-			return rocketMan;
-		case EnumID::Banshee_ID:
-			return banshee;
+		case EnumID::gunMan_ID:
+			return gunMan;
+		case EnumID::maceMan_ID:
+			return maceMan;
+		case EnumID::leopard_ID:
+			return leopard;
+		case EnumID::eagle_ID:
+			return eagle;
+		case EnumID::butterfly_ID:
+			return butterfly;
 		case EnumID::Boss_ID:
 			return boss;
 	}

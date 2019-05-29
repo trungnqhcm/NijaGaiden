@@ -48,8 +48,17 @@ void GameObject::CreateSprite()
 	case EnumID::Ground2_ID:
 		sprite = NULL;
 		break;
-	case EnumID::SwordMan_ID:
-		sprite = new CSprite(Singleton::getInstance()->getTexture(id), 0, 2, 80);
+	case EnumID::swordMan_ID:
+		sprite = new CSprite(Singleton::getInstance()->getTexture(id), 0, 2, 100); //so texture + toc do
+		break;
+	case EnumID::leopard_ID:
+		sprite = new CSprite(Singleton::getInstance()->getTexture(id), 0, 1, 200);
+		break;
+	case EnumID::maceMan_ID:
+		sprite = new CSprite(Singleton::getInstance()->getTexture(id), 0, 1, 200);
+		break;
+	case EnumID::gunMan_ID:
+		sprite = new CSprite(Singleton::getInstance()->getTexture(id), 0, 1, 200);
 		break;
 	case EnumID::Boss_ID:
 		sprite = new CSprite(Singleton::getInstance()->getTexture(id), 0, 1, 0);

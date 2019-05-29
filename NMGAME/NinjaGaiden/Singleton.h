@@ -20,14 +20,15 @@ private:
 	CTexture* hp;
 	CTexture* gameScore;
 	CTexture* fire;
-	CTexture* explosion;
-	CTexture* bullet;
-	CTexture* boomerang;
 	//CTexture* sword;
 
 	CTexture* swordMan;
-	CTexture* rocketMan;
-	CTexture* banshee;
+	CTexture* gunMan;
+	CTexture* maceMan;
+	CTexture* leopard;
+	CTexture* eagle;
+	CTexture* butterfly;
+
 	CTexture* boss;
 
 	static Singleton *single;

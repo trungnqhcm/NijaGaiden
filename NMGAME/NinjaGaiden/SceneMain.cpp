@@ -3,8 +3,6 @@
 
 SceneMain::SceneMain(int _nCmdShow) : CGame(_nCmdShow)
 {
-	/*sceneNow = new SceneMenu();
-	currentStateScene = ESceneState::Menu_Scene;*/
 	sceneNow = new SceneGame();
 }
 
@@ -18,14 +16,7 @@ void SceneMain::RenderFrame(LPDIRECT3DDEVICE9 d3ddv, int t)
 			sceneNow = new SceneGame();
 			sceneNow->LoadResources(d3ddv);
 			break;
-			/*case ESceneState::Menu_Scene:
-				sceneNow = new SceneMenu();
-				sceneNow->LoadResources(d3ddv);
-				break;*/
-				/*case ESceneState::EndGame_Scene:
-				sceneNow = new EndGameScene();
-				sceneNow->LoadResources(d3ddv);
-				break;*/
+
 		}
 		currentStateScene = sceneNow->sceneState;
 	}

@@ -2,6 +2,9 @@
 #include <map>
 #include "Ryu.h"
 #include "SwordMan.h"
+#include "Leopard.h"
+#include "MaceMan.h"
+#include "GunMan.h"
 
 #include "Ground.h"
 #include "Singleton.h"
@@ -16,7 +19,7 @@
 
 //using namespace std;
 
-class QGameObject
+class ListGameObject
 {
 protected:
 	D3DXVECTOR2 posDoor;
@@ -26,10 +29,10 @@ public:
 	list<GameObject*> *_staticObject;
 	list<GameObject*> *_MovingObject;
 
-	QGameObject(void);
-	~QGameObject(void);
+	ListGameObject(void);
+	~ListGameObject(void);
 
-	QGameObject(string);
+	ListGameObject(string);
 	void Draw(CCamera *camera);
 	void Update(int deltaTime);
 	void Update(int deltaTime, D3DXVECTOR2* ryuPos);
